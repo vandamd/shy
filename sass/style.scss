@@ -1,0 +1,77 @@
+@import "theme";
+
+:root {
+    font-family: 'Inter', 'Platypi', serif;
+    font-size: 18px;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    letter-spacing: -0.08em;
+}
+
+
+body {
+    margin: 0 auto;
+    padding: 1vw 32px;
+    padding-bottom: 128px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bio {
+    p {
+        margin-bottom: 0;
+    }
+
+    font-size: 1.75rem;
+    font-weight: 500;
+
+    .bio-name, .bio-link {
+        font-family: 'Platypi';
+        text-decoration: none;
+    }
+
+    .bio-name:hover, .bio-link:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.work {
+    font-size: 1.75rem;
+    font-family: 'Platypi';
+    margin-top: 64px;
+
+    .project {
+        p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        margin-bottom: 64px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1100px) {
+    body {
+        width: 800px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 1100px) {
+
+}

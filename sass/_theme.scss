@@ -1,0 +1,76 @@
+// Light Mode
+$foreground: #000000;
+$background: #FFFFFF;
+$blue: #1a69c4;
+
+// Dark Mode
+$foreground-dark: #D4D4D4;
+$background-dark: #191919;
+$blue-dark: #5094e2;
+
+@mixin light-theme {
+    color: $foreground;
+    background-color: $background;
+
+    p {
+        color: $foreground;
+    }
+
+    a, a:link, a:visited {
+        color: $foreground;
+    }
+
+    .bio-name:hover, .bio-link:hover {
+        color: $foreground;
+    }
+
+}
+
+@mixin dark-theme {
+    color: $foreground-dark;
+    background-color: $background-dark;
+
+    p {
+        color: $foreground-dark;
+    }
+
+    a, a:link, a:visited {
+        color: $blue-dark;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        @include light-theme;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        @include dark-theme;
+    }
+}
+
+body:not(.dark-mode) {
+    @include light-theme;
+
+    #dark-mode-on {
+        display: inline;
+    }
+
+    #dark-mode-off {
+        display: none;
+    }
+}
+
+body.dark-mode {
+    @include dark-theme;
+
+    #dark-mode-on {
+        display: none;
+    }
+
+    #dark-mode-off {
+        display: inline;
+    }
+}

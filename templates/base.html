@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Platypi:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Shynootha Shyamsunthar" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shynootha.com" />
+    <!-- <meta property="og:image" content="{{ get_url(path='images/me.jpg') }}"/> -->
+
+    <!-- <link rel="icon" href="{{ get_url(path='images/favicon.ico') }}" /> -->
+
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+    {% block extra_head %}
+        <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
+    {% endblock extra_head %}
+</head>
+
+<body>
+    <script src="/javascript/darkmode.js"></script>
+
+    <div class="bio">
+        <p>
+            <span class="bio-name">Shynootha Shyamsunthar</span> is a Sri Lankan-born British fashion designer. 
+            Currently, she is studying Fashion Design: Print at <a href="https://www.arts.ac.uk/colleges/central-saint-martins" target="_blank" class="bio-link">Central Saint Martins</a>.
+        </p>
+
+        <p>
+            <a href="mailto:hi@shynootha.com" class="bio-link" target="_blank">hi@shynootha.com</a>
+        </p>
+    </div>
+
+    <section>
+        {% block content %} 
+        {% endblock %}
+    </section>
+</body>
+</html>

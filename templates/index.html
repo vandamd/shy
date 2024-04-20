@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="work">
+    <div class="project">
+        <img src="{{ get_url(path='images/img3.jpg') }}">
+        <p>Project Name</p>
+    </div>
+
+    <div class="project">
+        <img src="{{ get_url(path='images/img2.jpg') }}">
+        <p>Project Name</p>
+    </div>
+
+    <div class="project">
+        <img src="{{ get_url(path='images/img1.jpg') }}">
+        <p>Project Name</p>
+    </div>
+</div>
+{% endblock content %}
