@@ -30,6 +30,7 @@ img {
     .bio-name, .bio-link {
         font-family: 'Platypi';
         text-decoration: none;
+        font-style: italic;
     }
 
     .bio-name:hover, .bio-link:hover {
@@ -41,6 +42,7 @@ img {
 .work {
     font-size: 1.75rem;
     font-family: 'Platypi';
+    font-style: italic;
     margin-top: 64px;
 
     .project {
@@ -52,18 +54,6 @@ img {
         margin-bottom: 64px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 1100px) {
     body {
