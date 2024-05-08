@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} — {{ config.title }}{% endblock title %}
+
+{% block content %}
+<div>
+    <h1><a href="/">Shynootha Shyamsunthar</a></h1>
+    <p class="subtitle"><a href="mailto:connect@shynootha.com">Email</a>, <a href="https://www.instagram.com/shynootha/" target="_blank">Instagram</a></p>
+</div>
+
+<section>
+    <div class="content">
+        {{ page.content | safe }}
+    </div>
+</section>
+
+{% endblock content %}

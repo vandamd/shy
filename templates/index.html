@@ -1,20 +1,27 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="work">
-    <div class="project">
-        <img src="{{ get_url(path='images/img3.jpg') }}">
-        <p>Project Name</p>
-    </div>
-
-    <div class="project">
-        <img src="{{ get_url(path='images/img2.jpg') }}">
-        <p>Project Name</p>
-    </div>
-
-    <div class="project">
-        <img src="{{ get_url(path='images/img1.jpg') }}">
-        <p>Project Name</p>
-    </div>
+<div>
+    <h1><a href="/">Shynootha Shyamsunthar</a></h1>
+    <p class="subtitle"><a href="mailto:connect@shynootha.com">Email</a>, <a href="https://www.instagram.com/shynootha/" target="_blank">Instagram</a></p>
 </div>
+
+<section>
+    <h2>Selected Works</h2>
+    <ul>
+        {% set section = get_section(path="projects/_index.md") %}
+        {% for page in section.pages %}
+        <li>
+            <a href="{{ page.permalink | safe }}">
+                {{ page.title }} 
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section>
+    {% set about = get_page(path="about.md") %}
+    {{ about.content | safe }}
+</section>
 {% endblock content %}
