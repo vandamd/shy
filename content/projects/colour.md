@@ -11,7 +11,7 @@ date = 2017-01-01
 ### Research
 
 ### Development
-{{ resize_image(path="/images/colour/P1.png") }}
+{{ resize_image(path="/images/colour/p1.png") }}
 {{ resize_image(path="/images/colour/full lay.png") }}
 
 ### Process
