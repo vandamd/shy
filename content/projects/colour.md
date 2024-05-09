@@ -8,7 +8,7 @@ date = 2017-01-01
 ### Final Design
 {{ resize_image(path="/images/colour/p2.png") }}
 
-### Research
+<!-- ### Research -->
 
 ### Development
 {{ resize_image(path="/images/colour/p1.png") }}

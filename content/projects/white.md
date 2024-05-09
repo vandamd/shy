@@ -19,4 +19,4 @@ date = 2018-01-01
 {{ resize_image(path="/images/white/pg3.png") }}
 {{ resize_image(path="/images/white/white dev.png") }}
 
-### Process
+<!-- ### Process -->

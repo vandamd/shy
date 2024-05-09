@@ -11,7 +11,7 @@ date = 2020-01-01
 {{ resize_image(path="/images/apron/ap3.jpg") }}
 {{ resize_image(path="/images/apron/ap4.jpg") }}
 
-### Research
+<!-- ### Research -->
 
 ### Development
 {{ resize_image(path="/images/apron/ap5.png") }}
@@ -19,4 +19,4 @@ date = 2020-01-01
 {{ resize_image(path="/images/apron/ap7.png") }}
 {{ resize_image(path="/images/apron/ap8.png") }}
 
-### Process
+<!-- ### Process -->

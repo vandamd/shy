@@ -16,7 +16,7 @@ date = 2019-01-01
 {{ resize_image(path="/images/cutting/p2.png") }}
 {{ resize_image(path="/images/cutting/Untitled-5.png") }}
 
-### Development
+<!-- ### Development -->
 
 ### Process
 {{ resize_image(path="/images/cutting/-3.png") }}

@@ -22,7 +22,6 @@ This led Shynootha to think about dances in her culture such as Bharatanatyam an
 ### Development
 {{ resize_image(path="/images/balenciaga/bal6.png") }}
 
-
 ### Process
 After multiple toiles, Shynootha was satisfied with the fit and silhouette of her garment. However, due to the lightweight nature of the saree fabric, the actual fabric itself needed amending - this was particularly difficult as the saree fabric was not only lightweight but non-fusible as it was translucent. Therefore, the jacket would have 4 and 7 layers in specific areas such as the chest.
 
