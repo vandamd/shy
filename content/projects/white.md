@@ -16,7 +16,7 @@ date = 2018-01-01
 
 ### Development
 {{ resize_image(path="/images/white/pg 4.png") }}
-{{ resize_image(path="/images/white/Pg3.png") }}
+{{ resize_image(path="/images/white/pg3.png") }}
 {{ resize_image(path="/images/white/white dev.png") }}
 
 ### Process
